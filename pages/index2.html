@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="/css/all.min.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/style/stayle.css">
+</head>
+
+<body>
+
+    <div class="containe">
+      <div>
+        <h2 class="text-center py-5 fs-1 fw-bold text-black">Hello, <span id="username"></span>!</h2>
+      </div>
+    </div>
+
+    <script>
+      const user = JSON.parse(localStorage.getItem("login"));
+
+      if (user) {
+        document.getElementById("username").textContent = user.name;
+      } else {
+        window.location.href = "/pages/login.html";
+      }
+    </script>
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+  </body>
+
+  </html>
+
+
+
+
+
+
+
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  <script src="/Java/main.js"></script>
+</body>
+
+</html>

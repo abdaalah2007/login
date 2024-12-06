@@ -1,0 +1,143 @@
+*{
+    font-family: "Montserrat", sans-serif;
+}
+::selection {
+ background-color: #ff060661
+}
+body{
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     background: url(/img/kkkk.jpg) center center / cover no-repeat;
+}
+.warb{
+    position: relative;
+    width: 400px;
+    height: 500px;
+}
+.warb button{
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255, 0, 0, 0.615) 97%);}
+.warb .sign-up{
+    transform: rotate(7deg);
+}
+.sign-in,
+.sign-up{
+    position: absolute ;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+    backdrop-filter: blur(17px) ;
+    background: rgba(255, 250, 250, 0.515);
+    background: linear-gradient(4deg, rgba(255, 255, 0, 0.638) 0%, rgba(255, 0, 0, 0.536) 85%)}
+.animate-sigup .sign-in {
+    transform: rotate(7deg);
+    animation: animatesignInnv .7s ease-in-out forwards;
+    animation-delay: 0.3s;
+} 
+.animate-sigin .sign-in{
+    animation: animatesignIn 1.5s ease-in-out forwards;
+
+}
+@keyframes animatesignIn{
+     0% {
+        transform: translateX(0);
+
+      }
+      50%{
+        transform: translateX(-500px);
+      }
+      100%{
+        transform: translateX(0) rotate(7deg);
+
+      }
+}
+
+.animate-sigin .sign-up {
+     animation: animatesignInnv .7s ease-in-out forwards;
+     animation-delay: 0.3s;
+} 
+ 
+@keyframes animatesignInnv{
+     0% {
+        transform: rotate(7deg);
+      }
+   
+      100% {
+        transform: rotate(0);
+        z-index: 1;
+      }
+}
+
+.animate-sigup .sign-up{
+    animation: animatesignup 1.5s ease-in-out forwards;
+
+}
+@keyframes animatesignup{
+     0% {
+        transform: translateX(0);
+        z-index: 1;
+
+      }
+      50%{
+        transform: translateX(500px);
+      }
+      100%{
+        transform: translateX(0) rotate(7deg);
+
+      }
+}
+
+
+
+
+.input-groupe{
+    position: relative ;
+    width: 320px;
+    margin: 30px 0;
+}
+.input-groupe input{
+    width: 100%;
+    height: 40px ;
+    font-size: 16px;
+    color: #333;
+    padding: 0 10px;
+}
+.input-groupe input:focus{
+    border-color: #000000;
+    outline: 0;
+    box-shadow: none;
+    border: none;
+
+}
+.Forgot a{
+    color: #272727;
+    font-size: 18px;
+    padding: 10px;
+    text-decoration: none;
+}
+.Forgot a:hover{
+    text-decoration: underline;
+}
+.sign-link p a{
+    color: rgb(255, 111, 0);
+    font-weight: bold;
+
+}
+.sign-link p a:hover{
+    text-decoration: underline;
+}
+.containe h2{
+    
+    width: 800px;
+    height: 150px;
+    background: rgb(255, 250, 250);
+    background: linear-gradient(4deg, rgba(255, 255, 0, 0.801) 0%, rgba(255, 0, 0, 0.536) 85%)
+
+}
